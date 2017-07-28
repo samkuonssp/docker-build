@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mediawiki:
+    image: "cent-mediawiki:latest"
+    container_name: mediawiki
+    ports:
+      - 8080:80
+    volumes:
+      - ./mediawiki:/var/www/html
